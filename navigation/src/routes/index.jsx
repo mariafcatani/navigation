@@ -3,21 +3,12 @@ import AppRoutes from "./app.routes";
 
 function Routes(){
 
-    const token = ""
-
     return(
         <NavigationContainer>
-
-            {
-                token.length > 0 ?
-                <AuthRoutes/>
-                :
+            
                 <AppRoutes/>
-            }
-           
-        </NavigationContainer>        
+                       
+        </NavigationContainer>
     )
 }
-
-
-export default Routes
+export default Routes;
